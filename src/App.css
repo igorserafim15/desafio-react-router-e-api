@@ -1,38 +1,185 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* ==========================================================================
+   Reset
+   ========================================================================== */
+
+/**
+ * Remove anchor text-decoration
+ */
+
+a {
+  text-decoration: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/**
+ * Remove list-style
+ */
+
+ol,
+ul {
+  list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+a,
+em,
+img,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+article,
+footer,
+header,
+nav,
+section,
+main {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+ul,
+span {
+  font-family: "Poppins", sans-serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: #333;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-size: 48px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 28px;
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: #333;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 0 15px;
+}
+
+/* Animation */
+.animation {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: animeLeft 0.5s forwards;
+}
+
+@keyframes animeLeft {
   to {
-    transform: rotate(360deg);
+    opacity: initial;
+    transform: initial;
   }
+}
+
+
+/* Header */
+.header nav a {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #0001;
+  border-radius: 4px;
+  margin-right: 10px;
+  transition: .2s;
+}
+.header nav a.active {
+  background-color: #0003;
+}
+.header nav a:hover {
+  background-color: #0003;
+}
+
+/* Home */
+.produto {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.produto__item {
+  flex: 1 1 300px;
+  max-width: 385px;
+}
+.produto__item img {
+  border-radius: 7px;
+  margin-bottom: 15px;
+}
+
+/* Contato */
+.contato {
+  display: flex;
+  gap: 40px;
+}
+
+.contato > div {
+  flex: 1;
+}
+.contato__image img {
+  border-radius: 7px;
+}
+
+/* Single Produto */
+.single-produto {
+  display: flex;
+  gap: 40px;
+}
+.single-produto > div {
+  flex: 1;
+}
+.single-produto__image img {
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+.single-produto__info span {
+  display: inline-block;
+  margin: 7px 0;
+  padding: 7px;
+  background-color: greenyellow;
+  border-radius: 10px;
+  color: green;
 }

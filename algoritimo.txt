@@ -1,0 +1,10 @@
+1. criar pag home e contato
+2. no App eu crio as rotas
+3. crio um header com dois botoes: produtos e contato
+4. coloco os links das rotas no header
+5. criar a página de contato
+6. na pag dos produtos (home) fazer um fetch, vai retornar uma array com varios objetos
+7. fazer um map na array e exibir imagem e titulo e id para o link
+8. criar link para cada item
+9. criar pagina template do produto
+10. no produto clicado, vai fazer um filter e retornar o objeto correspondente da url (id) 
